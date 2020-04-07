@@ -1,0 +1,97 @@
+\documentclass[a4paper, 11pt]{book}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[frenchb]{babel}
+\usepackage[english]{babel}
+
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{mathtools}
+\usepackage{slashed}
+\geometry{hmargin=3cm, vmargin=3cm}
+
+\usepackage{lmodern}
+\usepackage{ae,aecompl}
+\usepackage{graphicx}
+\usepackage{eso-pic}	% Nécessaire pour mettre des images en arrière plan
+\usepackage{array}		% Permet d'écrite 'THESE' de haut en bas
+\usepackage[absolute,overlay]{textpos}
+\usepackage[english]{minitoc}  %permet de faire une table des matieres par chapitre
+\usepackage[a-1b]{pdfx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{afterpage}
+
+% ajoute (entre autre) la bibliographie dans la table des matieres 
+\usepackage[nottoc]{tocbibind}
+
+% biblio ordonnee classique
+\bibliographystyle{unsrt}
+
+\date{\today}
+
+% \input{Pagedegarde}
+
+% \author{Robin \textsc{Caron}}
+% \title{\Huge{\textbf{Charm and beauty anisotropic flow in ultra-relativistic heavy-ions collisions with ALICE at the LHC}}}
+% \ED{\'{E}cole doctorale \no 576 : Particles, Hadrons, Energy, Nuclei, Instrumentation, Imaging, Cosmos et Simulation (PHENIICS)}
+% \doctorat{Doctorat Paris-Sud}
+% \specialite{Physique Hadronique}
+% \directeur{Javier \textsc{Castillo}}
+% \encadrant{Stefano \textsc{Panebianco}}
+% \date{20 juillet 2021}
+% \jurya{M. Vincent Vega}{Professeur, MINES ParisTech}{Rapporteur}
+% \juryb{M. Jules Winnfield}{Professeur, Arts Et Métiers ParisTech}{Rapporteur}
+% \juryc{M. Butch Coolidge}{Chargé de recherche, ENS Cachan}{Examinateur}
+% \juryd{Mme. Mya Wallace}{Danseuse, en freelance}{Examinateur}
+% \jurye{M. Marsellus Wallace}{Ingénieur, MIT}{Examinateur}
+% \ecole{l'Université Paris-Sud}
+% \adresse{
+% 	\textbf{Institut de Recherche sur les Lois Fondamentales de l'Univers \\ CEA Saclay - Département de Physique Nucléaire \\	91272 Gif-sur-Yvette, Essone, France}
+% }
+
+
+
+
+
+
+\begin{document}
+
+\include{1ere}
+
+%\pagedegarde
+%\maketitle
+\dominitoc
+
+\include{abstract}
+\include{resume}
+\include{remerciements}
+\include{publications_list}
+
+\tableofcontents
+
+\include{intro}
+
+\include{chap1}
+\include{chap2}
+\include{chap3}
+\include{chap4}
+\include{chap5}
+\include{chap6}
+
+\include{conclu}
+
+\appendix
+
+\include{annexe1}
+\include{annexe2}
+\include{annexe3}
+
+\bibliography{allbiblio}
+
+\include{4eme}
+
+\end{document}
+
